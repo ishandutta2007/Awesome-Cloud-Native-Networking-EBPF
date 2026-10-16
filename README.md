@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF?style=social" alt="GitHub stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF?style=social" alt="GitHub forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF?style=flat-square&color=blue" alt="GitHub issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Cloud-Native-Networking-EBPF?style=flat-square&color=indigo" alt="GitHub pull requests" /></a>
@@ -67,92 +67,92 @@ Below is a comparison of leading enterprise and hosted Kubernetes networking pla
 
 Every major open-source cloud-native networking repository, kernel dataplane toolkit, and observability framework, sorted in **descending order by GitHub stargazers**:
 
-### 1. [Cilium](https://github.com/cilium/cilium) [![GitHub stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers)
+### 1. [Cilium](https://github.com/cilium/cilium) [![GitHub_Stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers)
 - 🐝 **Description**: eBPF-based Networking, Observability, and Security for Kubernetes.
 - 💡 **Core Highlights**: CNCF Graduated project. De facto industry standard for cloud-native eBPF networking. Bypasses `kube-proxy` via eBPF sockops/XDP, enforces identity-aware L3/L4/L7 policies, provides ClusterIP load balancing, multi-pool IPAM, and native WireGuard/IPsec encryption.
 - 🎯 **Best For**: Modern Kubernetes clusters (EKS, AKS, GKE Dataplane V2), high-density microservices, and high-throughput networking.
 
-### 2. [BCC (BPF Compiler Collection)](https://github.com/iovisor/bcc) [![GitHub stars](https://img.shields.io/github/stars/iovisor/bcc?style=social&color=white)](https://github.com/iovisor/bcc/stargazers)
+### 2. [BCC (BPF Compiler Collection)](https://github.com/iovisor/bcc) [![GitHub_Stars](https://img.shields.io/github/stars/iovisor/bcc?style=social&color=white)](https://github.com/iovisor/bcc/stargazers)
 - 🔧 **Description**: Toolkit for creating efficient kernel tracing, manipulation, and network instrumentation programs using extended BPF.
 - 💡 **Core Highlights**: Foundational collection of tools and Python/Lua/C++ frontends for analyzing socket connections, TCP lifecycle, network latency, and low-level Linux kernel events.
 - 🎯 **Best For**: Kernel-level network debugging, systems programming, and performance analysis.
 
-### 3. [bpftrace](https://github.com/iovisor/bpftrace) [![GitHub stars](https://img.shields.io/github/stars/iovisor/bpftrace?style=social&color=white)](https://github.com/iovisor/bpftrace/stargazers)
+### 3. [bpftrace](https://github.com/iovisor/bpftrace) [![GitHub_Stars](https://img.shields.io/github/stars/iovisor/bpftrace?style=social&color=white)](https://github.com/iovisor/bpftrace/stargazers)
 - 🔬 **Description**: High-level tracing language for Linux enhanced Berkeley Packet Filter (eBPF).
 - 💡 **Core Highlights**: Inspired by awk and DTrace; provides one-liners and scripts for diagnosing network packet drops, socket connections, TCP retransmissions, and CNI performance bottlenecks in production.
 - 🎯 **Best For**: Ad-hoc production network troubleshooting and latency profiling.
 
-### 4. [Flannel](https://github.com/flannel-io/flannel) [![GitHub stars](https://img.shields.io/github/stars/flannel-io/flannel?style=social&color=white)](https://github.com/flannel-io/flannel/stargazers)
+### 4. [Flannel](https://github.com/flannel-io/flannel) [![GitHub_Stars](https://img.shields.io/github/stars/flannel-io/flannel?style=social&color=white)](https://github.com/flannel-io/flannel/stargazers)
 - 🧵 **Description**: Simple and easy-to-configure container network interface (CNI) fabric for Kubernetes.
 - 💡 **Core Highlights**: Configures a layer 3 network fabric using VXLAN, host-gw, or WireGuard. Extremely lightweight with minimal memory and CPU footprints.
 - 🎯 **Best For**: Edge computing (K3s), beginner learning clusters, testing environments, and simple clusters where Kubernetes NetworkPolicy enforcement is handled out-of-band.
 
-### 5. [Falco](https://github.com/falcosecurity/falco) [![GitHub stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
+### 5. [Falco](https://github.com/falcosecurity/falco) [![GitHub_Stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
 - 🦅 **Description**: Cloud-native runtime security and network anomaly detection engine (CNCF Graduated).
 - 💡 **Core Highlights**: Leverages eBPF probes and modern kernel drivers to monitor unexpected network socket events, outbound connections to malicious IPs, port scanning, and suspicious container traffic patterns.
 - 🎯 **Best For**: Runtime container security, network threat detection, and SOC2/PCI-DSS compliance.
 
-### 6. [Sysdig OSS](https://github.com/draios/sysdig) [![GitHub stars](https://img.shields.io/github/stars/draios/sysdig?style=social&color=white)](https://github.com/draios/sysdig/stargazers)
+### 6. [Sysdig OSS](https://github.com/draios/sysdig) [![GitHub_Stars](https://img.shields.io/github/stars/draios/sysdig?style=social&color=white)](https://github.com/draios/sysdig/stargazers)
 - 🔍 **Description**: Universal system visibility tool and packet sniffer with native container and Kubernetes support.
 - 💡 **Core Highlights**: Captures system calls and networking events at the OS kernel level via eBPF; enables deep packet and socket stream decoding with Lua scriptable filters (chisels).
 - 🎯 **Best For**: Deep container forensic investigations and post-mortem network analysis.
 
-### 7. [cilium/ebpf](https://github.com/cilium/ebpf) [![GitHub stars](https://img.shields.io/github/stars/cilium/ebpf?style=social&color=white)](https://github.com/cilium/ebpf/stargazers)
+### 7. [cilium/ebpf](https://github.com/cilium/ebpf) [![GitHub_Stars](https://img.shields.io/github/stars/cilium/ebpf?style=social&color=white)](https://github.com/cilium/ebpf/stargazers)
 - 📦 **Description**: Pure Go library to read, modify, and load eBPF programs and maps into the Linux kernel without CGo dependencies.
 - 💡 **Core Highlights**: Enables Go developers to build high-performance cloud-native networking tools, custom XDP firewalls, TC (traffic control) filters, and socket programs.
 - 🎯 **Best For**: Building custom Go-based CNIs, network controllers, and cloud-native observability agents.
 
-### 8. [Calico Open Source](https://github.com/projectcalico/calico) [![GitHub stars](https://img.shields.io/github/stars/projectcalico/calico?style=social&color=white)](https://github.com/projectcalico/calico/stargazers)
+### 8. [Calico Open Source](https://github.com/projectcalico/calico) [![GitHub_Stars](https://img.shields.io/github/stars/projectcalico/calico?style=social&color=white)](https://github.com/projectcalico/calico/stargazers)
 - 🐯 **Description**: Cloud-native networking, IP address management (IPAM), and network security for containers, VMs, and bare-metal workloads.
 - 💡 **Core Highlights**: The enterprise standard for BGP-routed cloud-native networks. Features multiple pluggable dataplanes (eBPF, iptables, Windows HNS, and VPP), wire-speed WireGuard encryption, and fine-grained Kubernetes NetworkPolicy enforcement.
 - 🎯 **Best For**: On-premises enterprise Kubernetes, OpenShift, telco 5G CNFs, and environments requiring native top-of-rack BGP peering.
 
-### 9. [Weave Net](https://github.com/weaveworks/weave) [![GitHub stars](https://img.shields.io/github/stars/weaveworks/weave?style=social&color=white)](https://github.com/weaveworks/weave/stargazers)
+### 9. [Weave Net](https://github.com/weaveworks/weave) [![GitHub_Stars](https://img.shields.io/github/stars/weaveworks/weave?style=social&color=white)](https://github.com/weaveworks/weave/stargazers)
 - 🕸️ **Description**: Simple, resilient multi-host network overlay for Docker and Kubernetes.
 - 💡 **Core Highlights**: Historically pioneering mesh network overlay with automated IPAM and packet encryption.
 - ⚠️ **Status**: Project is archived/in maintenance mode; not recommended for new greenfield production deployments.
 
-### 10. [Pixie](https://github.com/pixie-io/pixie) [![GitHub stars](https://img.shields.io/github/stars/pixie-io/pixie?style=social&color=white)](https://github.com/pixie-io/pixie/stargazers)
+### 10. [Pixie](https://github.com/pixie-io/pixie) [![GitHub_Stars](https://img.shields.io/github/stars/pixie-io/pixie?style=social&color=white)](https://github.com/pixie-io/pixie/stargazers)
 - ✨ **Description**: Open-source, no-instrumentation eBPF observability platform for Kubernetes.
 - 💡 **Core Highlights**: Automatically tracks full-body HTTP/gRPC/DNS requests, network latency, and service maps with zero manual application instrumentation.
 - 🎯 **Best For**: Real-time network debugging, automatic distributed tracing, and protocol inspection.
 
-### 11. [Tetragon](https://github.com/cilium/tetragon) [![GitHub stars](https://img.shields.io/github/stars/cilium/tetragon?style=social&color=white)](https://github.com/cilium/tetragon/stargazers)
+### 11. [Tetragon](https://github.com/cilium/tetragon) [![GitHub_Stars](https://img.shields.io/github/stars/cilium/tetragon?style=social&color=white)](https://github.com/cilium/tetragon/stargazers)
 - 🛡️ **Description**: eBPF-based Security Observability & Real-Time Runtime Enforcement (Cilium sub-project).
 - 💡 **Core Highlights**: Operates directly in the Linux kernel to observe and enforce process execution, file integrity, network namespace boundaries, and socket operations before malicious packets leave the host.
 - 🎯 **Best For**: Kernel-level zero-trust enforcement, network perimeter lockdown, and real-time incident containment.
 
-### 12. [Hubble](https://github.com/cilium/hubble) [![GitHub stars](https://img.shields.io/github/stars/cilium/hubble?style=social&color=white)](https://github.com/cilium/hubble/stargazers)
+### 12. [Hubble](https://github.com/cilium/hubble) [![GitHub_Stars](https://img.shields.io/github/stars/cilium/hubble?style=social&color=white)](https://github.com/cilium/hubble/stargazers)
 - 🔭 **Description**: Distributed networking and security observability platform built on Cilium and eBPF.
 - 💡 **Core Highlights**: Provides high-resolution flow logging, dynamic dependency service maps, Prometheus metrics for TCP latency and DNS resolution times, and interactive CLI/UI interfaces.
 - 🎯 **Best For**: Visualizing Kubernetes pod communication flows, troubleshooting DNS degradation, and auditing policy drops.
 
-### 13. [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) [![GitHub stars](https://img.shields.io/github/stars/k8snetworkplumbingwg/multus-cni?style=social&color=white)](https://github.com/k8snetworkplumbingwg/multus-cni/stargazers)
+### 13. [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) [![GitHub_Stars](https://img.shields.io/github/stars/k8snetworkplumbingwg/multus-cni?style=social&color=white)](https://github.com/k8snetworkplumbingwg/multus-cni/stargazers)
 - 🔌 **Description**: Multi-homed CNI meta-plugin attaching multiple network interfaces to a single Kubernetes pod.
 - 💡 **Core Highlights**: Bridges different CNI plugins together (e.g., pairing Cilium/Calico for default cluster networking with SR-IOV or Macvlan for high-throughput secondary data interfaces).
 - 🎯 **Best For**: Telco 5G core workloads, AI/ML training clusters requiring dedicated RoCE/InfiniBand NICs, and network function virtualization (VNF/CNF).
 
-### 14. [libbpf](https://github.com/libbpf/libbpf) [![GitHub stars](https://img.shields.io/github/stars/libbpf/libbpf?style=social&color=white)](https://github.com/libbpf/libbpf/stargazers)
+### 14. [libbpf](https://github.com/libbpf/libbpf) [![GitHub_Stars](https://img.shields.io/github/stars/libbpf/libbpf?style=social&color=white)](https://github.com/libbpf/libbpf/stargazers)
 - 📚 **Description**: Upstream Linux kernel C library for loading and interacting with eBPF programs with BPF CO-RE (Compile Once – Run Everywhere).
 - 💡 **Core Highlights**: The official upstream standard for modern, portable kernel programs, powering state-of-the-art packet processing and network monitoring daemons across all Linux distributions.
 - 🎯 **Best For**: Systems developers engineering kernel-level networking and high-performance packet dataplanes.
 
-### 15. [Kube-Router](https://github.com/cloudnativelabs/kube-router) [![GitHub stars](https://img.shields.io/github/stars/cloudnativelabs/kube-router?style=social&color=white)](https://github.com/cloudnativelabs/kube-router/stargazers)
+### 15. [Kube-Router](https://github.com/cloudnativelabs/kube-router) [![GitHub_Stars](https://img.shields.io/github/stars/cloudnativelabs/kube-router?style=social&color=white)](https://github.com/cloudnativelabs/kube-router/stargazers)
 - 🚦 **Description**: Lean, all-in-one Kubernetes networking solution providing BGP-based routing, IPVS service proxying, and policy enforcement.
 - 💡 **Core Highlights**: Combines pod networking with high-performance Linux IPVS (IP Virtual Server) for lightning-fast cluster IP load balancing and standard BGP router peering without external sidecars.
 - 🎯 **Best For**: Bare-metal clusters requiring direct BGP peering with enterprise switches and high-speed IPVS proxying.
 
-### 16. [Antrea](https://github.com/antrea-io/antrea) [![GitHub stars](https://img.shields.io/github/stars/antrea-io/antrea?style=social&color=white)](https://github.com/antrea-io/antrea/stargazers)
+### 16. [Antrea](https://github.com/antrea-io/antrea) [![GitHub_Stars](https://img.shields.io/github/stars/antrea-io/antrea?style=social&color=white)](https://github.com/antrea-io/antrea/stargazers)
 - 🌉 **Description**: Kubernetes networking and security provider built on Open vSwitch (OVS).
 - 💡 **Core Highlights**: CNCF Incubating project. Delivers uniform networking across Linux and Windows nodes, multi-cluster interconnects, tiered network policies, WireGuard encryption, and optional native eBPF datapaths.
 - 🎯 **Best For**: VMware Tanzu environments, hybrid Linux/Windows clusters, and enterprise OVS infrastructures.
 
-### 17. [OVN-Kubernetes](https://github.com/ovn-org/ovn-kubernetes) [![GitHub stars](https://img.shields.io/github/stars/ovn-org/ovn-kubernetes?style=social&color=white)](https://github.com/ovn-org/ovn-kubernetes/stargazers)
+### 17. [OVN-Kubernetes](https://github.com/ovn-org/ovn-kubernetes) [![GitHub_Stars](https://img.shields.io/github/stars/ovn-org/ovn-kubernetes?style=social&color=white)](https://github.com/ovn-org/ovn-kubernetes/stargazers)
 - 🏛️ **Description**: Open Virtual Network (OVN) and Open vSwitch (OVS) based Kubernetes CNI provider.
 - 💡 **Core Highlights**: The default network provider for Red Hat OpenShift. Implements distributed virtual routing, distributed access control lists (ACLs), egress IP assignment, and native gateway load balancing.
 - 🎯 **Best For**: Red Hat OpenShift, OpenStack-integrated clouds, and large-scale enterprise SDN fabrics.
 
-### 18. [SR-IOV CNI](https://github.com/k8snetworkplumbingwg/sriov-cni) [![GitHub stars](https://img.shields.io/github/stars/k8snetworkplumbingwg/sriov-cni?style=social&color=white)](https://github.com/k8snetworkplumbingwg/sriov-cni/stargazers)
+### 18. [SR-IOV CNI](https://github.com/k8snetworkplumbingwg/sriov-cni) [![GitHub_Stars](https://img.shields.io/github/stars/k8snetworkplumbingwg/sriov-cni?style=social&color=white)](https://github.com/k8snetworkplumbingwg/sriov-cni/stargazers)
 - ⚡ **Description**: Single Root I/O Virtualization (SR-IOV) network device plugin and CNI.
 - 💡 **Core Highlights**: Directly allocates hardware Virtual Functions (VFs) from high-speed network adapters (Mellanox, Intel) into container namespaces for near-zero latency and line-rate throughput.
 - 🎯 **Best For**: High-frequency trading (HFT), high-throughput AI/ML workloads, and low-latency NFV telecom workloads.
