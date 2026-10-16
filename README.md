@@ -30,56 +30,26 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global cloud-native networking and container networking market is estimated at approximately **$3.5B to $7B** (with the broader Cloud-Native Network Functions market exceeding $25B and projected to surpass $70B by the 2030s at a ~20% CAGR), while specialized kernel-level eBPF networking and security constitutes an emerging sub-segment expanding towards $5B+. The sector is **moderately fragmented and dual-structured**: public cloud hyperscalers dominate the commoditized native VPC overlay tier, while high-performance eBPF dataplanes, advanced network policy enforcement, and observability represent an open-source-anchored battleground led by Cilium and Calico enterprise ecosystems alongside consolidating enterprise networking giants (Cisco, Broadcom).
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Calico Enterprise (Tigera)](https://docs.tigera.io/calico/latest/about/calico-product-editions)**  
-
-  **Self-managed platform for Kubernetes networking, network security, and observability** . **Extends Calico Open Source** with **hierarchical tiered network policy**, **DNS/FQDN-based policy**, **policy recommendations**, **SIEM integrations**, **workload-centric WAF**, and **compliance reporting** . **The enterprise standard** for organizations requiring regulatory compliance and multi-cluster security controls.
-
-
-
-- **[Calico Cloud](https://docs.tigera.io/calico/latest/about/product-comparison)**  
-
-  **Fully managed SaaS platform for Kubernetes networking and security** . **Calico Cloud Free Tier** provides **observability and policy management for a single cluster** at no cost . **The most accessible commercial Calico option**—no infrastructure to manage.
-
-
-
-- **[Isovalent Enterprise Cilium](https://pages.solo.io/rs/132-VJP-402/images/Service_mesh_buyers_guide.pdf?version=0#7#3)**  
-
-  **Enterprise version of Cilium with troubleshooting, operational support, and multi-cluster capabilities** . **Cluster Mesh** enables **failover to other clusters** when resources become unavailable or are misconfigured . **Cisco acquired Isovalent** in 2024, integrating Cilium into Cisco's multicloud networking portfolio .
-
-
-
-- **[VMware NSX](https://www.vmware.com/)**  
-
-  **Enterprise network virtualization and security platform** with container networking via **NSX Container Plugin (NCP)**. **The most integrated with VMware ecosystem** for organizations running vSphere and Tanzu.
-
-
-
-- **[AWS VPC CNI](https://aws.amazon.com/)**  
-
-  **Native AWS CNI** assigning VPC IP addresses directly to pods. **The default for EKS**—pods are first-class VPC citizens with native AWS networking integration. **Best for AWS-native workloads** requiring direct VPC connectivity.
-
-
-
-- **[Azure CNI](https://azure.microsoft.com/)**  
-
-  **Native Azure CNI** with VNet integration. **Azure CNI Overlay** provides overlay networking without consuming VNet IP space. **The default for AKS** with deep Azure networking integration.
-
-
-
+| Product | Company | Valuation / Revenue | Starting Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Azure CNI](https://azure.microsoft.com/)** | Microsoft | ~$3.1T Market Cap / ~$245B Annual Revenue | $0.00 (Included with AKS; AKS Standard tier starts at $0.10/cluster/hour, ~$73/month) | **Free tier available**: AKS Free control plane tier covers up to 1,000 nodes at $0/month (standard Azure compute/VNet egress resource usage charged separately). | **Native Azure CNI** with VNet integration. Azure CNI Overlay provides overlay networking without consuming VNet IP space. Default for AKS. |
+| **[AWS VPC CNI](https://aws.amazon.com/)** | Amazon (AWS) | ~$1.9T Market Cap / ~$105B+ AWS Annual Revenue Run Rate | $0.00 (Software is free; EKS managed control plane starts at $0.10/cluster/hour, ~$72/month) | **Trial/Credit tier**: No permanent free control plane tier; eligible for AWS Free Tier $100–$200 promotional credits (expires in 6 months; standard EC2/VPC infrastructure billable). | **Native AWS CNI** assigning VPC IP addresses directly to pods. Default for EKS—pods are first-class VPC citizens with native AWS networking integration. |
+| **[VMware NSX](https://www.vmware.com/)** | Broadcom | ~$800B Market Cap / ~$50B+ Annual Revenue | Subscriptions start per-core via VMware Cloud Foundation (VCF) / vDefend bundles (~16-core minimum per CPU socket) | **60-day free trial**: Full evaluation mode for 60 days across NSX Manager and container plugins; reverts to read-only/restricted mode upon expiration. | **Enterprise network virtualization and security platform** with container networking via NSX Container Plugin (NCP). Deep integration with vSphere and Tanzu. |
+| **[Isovalent Enterprise Cilium](https://pages.solo.io/rs/132-VJP-402/images/Service_mesh_buyers_guide.pdf?version=0#7#3)** | Cisco (Isovalent) | ~$230B Market Cap / ~$54B Annual Revenue (Isovalent acquired for ~$650M) | Starting tier estimated at ~$1,000/node/year (unit-based licensing via Cisco / Cloud Marketplaces) | **Interactive labs / Custom trial**: Free hands-on access via Isovalent Interactive Labs (unlimited, no expiration for learning); custom enterprise evaluation licenses available upon request. | **Enterprise version of Cilium** with troubleshooting, operational support, and multi-cluster capabilities. Cluster Mesh enables cross-cluster failover and multicloud connectivity. |
+| **[Calico Cloud](https://docs.tigera.io/calico/latest/about/product-comparison)** | Tigera | ~$100M–$150M Valuation (~$25M+ ARR) | Pay-as-you-go starting at $0.025/vCPU-hour (~$0.05–$0.08/node-hour or ~$350/node/year) | **Free tier available**: Permanent Free Tier covers 1 Kubernetes cluster (requires Calico Open Source 3.30+, includes Dynamic Service Graph and view-only policy board); also offers a 14-day full-feature trial (no credit card required). | **Fully managed SaaS platform for Kubernetes networking and security**. Provides policy management, runtime observability, and service graphs without managing infrastructure. |
+| **[Calico Enterprise](https://docs.tigera.io/calico/latest/about/calico-product-editions)** | Tigera | ~$100M–$150M Valuation (~$25M+ ARR) | Annual subscriptions based on node/vCPU count via private marketplace offers | **Custom evaluation trial**: Multi-week trial license provided on request via Tigera technical sales; alternative hands-on trial available via Calico Cloud 14-day trial. | **Self-managed enterprise platform** extending Calico Open Source with hierarchical tiered network policy, DNS/FQDN policy, policy recommendations, SIEM integrations, workload WAF, and compliance reporting. |
 ## Open-Source GitHub Projects
 
 
